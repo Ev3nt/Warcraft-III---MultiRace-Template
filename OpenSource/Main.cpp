@@ -1,5 +1,6 @@
 #include <Windows.h>
 #include <vector>
+
 #include "Memory.h"
 
 using namespace std;
@@ -63,8 +64,6 @@ BOOL APIENTRY DllMain(HMODULE hModule, UINT ul_reason_for_call, LPVOID lpReserve
 		jmp(dwGame + 0x3c11d0, RaceIncreaser);
 		jmp(dwGame + 0x3c11a0, RaceInit);
 		patch(dwGame + 0x5bf4e3, 0, 1);
-
-		//stdcall<int>(GetProcAddress(GetModuleHandle("storm.dll"), (LPCSTR)279), "scorescreen-player-unknown.blp", 0, 0, 1, 0);
 	}
 
 	return TRUE;

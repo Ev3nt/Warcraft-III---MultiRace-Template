@@ -32,4 +32,9 @@
       <Filter>Исходные файлы\ASM</Filter>
     </MASM>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Filter>Исходные файлы</Filter>
+    </None>
+  </ItemGroup>
 </Project>
